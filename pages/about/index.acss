@@ -1,0 +1,14 @@
+.about {
+    width: 100%;
+    font-size: 28rpx;
+}
+.about .about-body {
+    margin-bottom: 50rpx;
+}
+.about view {
+    line-height: 1.8;
+    margin-bottom: 20rpx;
+}
+.connect-us view {
+    line-height: 1.2;
+}

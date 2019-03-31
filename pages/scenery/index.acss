@@ -1,0 +1,18 @@
+.main .scenery-body {
+    width: 100%;
+}
+.main .scenery-body .scenery-item {
+    padding: 10rpx;
+    margin-bottom: 20rpx;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 6rpx;
+    background: #fff;
+}
+.main .scenery-body .scenery-item .image {
+    min-width: 100%;
+    vertical-align: middle;
+}
+.main .scenery-body .scenery-item .desc {
+    margin-top: 10rpx;
+}

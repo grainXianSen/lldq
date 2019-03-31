@@ -1,0 +1,87 @@
+/* info.acss */
+/* panel-body */
+.panel .figure-list {
+    width: 100%;
+}
+
+.figure-list .figure-item {
+    display: flex;
+    margin-bottom: 20rpx;
+    padding: 10rpx;
+    background: #fff;
+    border-radius: 6rpx;
+}
+
+.figure-list .figure-item .figure-image {
+    position: relative;
+    padding-bottom: 0;
+}
+.figure-list .figure-item .figure-image .image {
+    width: 320rpx;
+    height: 220rpx;
+    vertical-align: middle;
+}
+.figure-list .figure-item .figure-image .method {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6rpx 8rpx;
+    font-size: 24rpx;
+    background: #09bb07;
+    color: #fff;
+}
+
+.figure-list .figure-item .figure-caption {
+    position: relative;
+    width: 100%;
+    padding-left: 20rpx;
+}
+.figure-list .figure-item .figure-caption .caption {
+    margin-bottom: 20rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+}
+.figure-list .figure-item .figure-caption .desc {
+    font-size: 24rpx;
+    opacity: .6;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
+.figure-list .figure-item .figure-caption .money {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20rpx;
+    color: #f60;
+    overflow: hidden;
+    width: 100%;
+}
+.figure-list .figure-item .figure-caption .money .unit {
+    font-size: 24rpx;
+}
+.figure-list .figure-item .figure-caption .money .value {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.figure-list .figure-item .figure-caption .money .buy {
+    float: right;
+    margin-right: 6rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    padding: 0 20rpx;
+    font-size: 20rpx;
+    background: #f60;
+    color: #fff;
+}
+.figure-list .figure-item .figure-caption .discount {
+    position: absolute;
+    top: 2rpx;
+    right: -30rpx;
+    padding: 0 20rpx;
+    font-size: 24rpx;
+    transform: rotate(45deg);
+    color: #f60;
+}

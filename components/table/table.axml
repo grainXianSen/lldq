@@ -1,0 +1,25 @@
+<!--components/table/table.axml-->
+<view class='table {{tClass}}'>
+    <view class='thead'>
+        <view class='tr'>
+            <view class='th' a:for='{{tHead}}'
+                a:key='{{index}}'
+                style='width: {{colWidth}}'>
+                <view class='cell'>{{item}}</view>
+            </view>
+        </view>
+    </view>
+    <view class='tbody'>
+        <view class='tr' a:for='{{tBody}}'
+            a:for-index='i'
+            a:key='{{i}}'>
+            <view class='td' a:for='{{item}}' 
+                a:for-index='j'
+                a:for-item='subItem' 
+                a:key='{{j}}'
+                style='width: {{colWidth}}'>
+                <view class='cell'>{{subItem}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+/* components/panel/panel.acss */
+.panel {
+    width: 100%;
+    margin-bottom: 50rpx;
+}
+.panel:last-child {
+    margin-bottom: 0;
+}
+
+.panel-head {
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;
+    border-bottom: 2rpx dashed #333;
+    font-size: 40rpx;
+    font-weight: bold;
+}

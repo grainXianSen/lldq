@@ -1,0 +1,44 @@
+.main .res-body {
+    width: 100%;
+    margin-bottom: 40rpx;
+}
+
+/* 票务预定 */
+.main .res-body .ticket-form {
+    font-size: 30rpx;
+}
+.main .res-body .form-item {
+    position: relative;
+    margin-bottom: 10rpx;
+}
+.main .res-body .form-label {
+    line-height: 64rpx;
+}
+.main .res-body .form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 120rpx;
+    box-sizing: border-box;
+}
+.main .res-body .form-input .form-text {
+    width: 100%;
+    display: inline-block;
+    padding: 12rpx 16rpx;
+    border: 1px solid #ddd;
+    border-radius: 6rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+.main .res-body .book-ticket {
+    text-align: center;
+}
+.main .res-body .book-ticket .button {
+    width: 100%;
+    font-size: 32rpx;
+	line-height: 2;
+    color: #fff;
+    background: #f60;
+	border-radius: 10rpx;
+}

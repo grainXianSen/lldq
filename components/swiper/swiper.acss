@@ -1,0 +1,4 @@
+/* components/swiper/swiper.acss */
+.slider-image {
+    min-width: 100%;
+}

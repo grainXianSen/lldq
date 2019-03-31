@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "banner": "/components/banner/banner",
+        "panel": "/components/panel/panel",
+        "table": "/components/table/table",
+        "grain-tabbar": "/components/tabbar/tabbar"
+    }
+}

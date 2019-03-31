@@ -1,0 +1,12 @@
+require('@alipay/appx-compiler/lib/sjsEnvInit.js');
+require('./config$.js');
+require('../../components/swiper/swiper.js');
+require('../../components/banner/banner.js');
+require('../../components/panel/panel.js');
+require('../../components/table/table.js');
+require('../../components/tabbar/tabbar.js');
+require('../../pages/index/index.js');
+require('../../pages/info/index.js');
+require('../../pages/ticket/index.js');
+require('../../pages/scenery/index.js');
+require('../../pages/about/index.js');

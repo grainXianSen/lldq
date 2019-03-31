@@ -1,0 +1,37 @@
+<!--info.axml-->
+<import src='/template/footer/footer.axml'/>
+
+<scroll-view class='warp-container' scroll-y="{{true}}">
+    <!-- 头部 -->
+    <view class='header'>
+        <banner banner-image='{{bannerImage}}'></banner>
+    </view>
+
+    <!-- 内容 -->
+    <view class='main'>
+        <panel panel-head='{{panelHead}}'>
+            <view class='figure-list' slot='panelBody'>
+                <view class='figure-item' a:for='{{figureList}}'
+                    a:key='{{index}}'>
+                    <view class='figure-image'>
+                        <image class='image' src='{{item.url}}' width='200' height='125'></image>
+                        <text class='method'>{{item.method}}</text>
+                    </view>
+                    <view class='figure-caption'>
+                        <view class='caption'>{{item.caption}}</view>
+                        <view class='desc'>{{item.desc}}</view>
+                        <view class='money'>
+                            <text class='unit'>{{item.unit}}</text>
+                            <text class='value'>{{item.value}}</text>
+                            <button class='buy' type='mini'>抢购</button>
+                        </view>
+                        <view class='discount'>{{item.discount}}折</view>
+                    </view>
+                </view>
+            </view>
+        </panel>
+    </view>
+
+    <!-- 尾部 -->
+    <template is='grainFooter' />
+</scroll-view>

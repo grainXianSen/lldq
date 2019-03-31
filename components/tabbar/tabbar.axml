@@ -1,0 +1,20 @@
+<!--components/tabbar/tabbar.axml-->
+<view class='grain-tabbar'>
+    <view class='tabbar'>
+        <view class='tabbar-body'>
+            <block a:for='{{tabbarList}}' a:key='{{index}}'>
+                <view class='tabbar-title' data-name='{{item.value}}'
+                    a:if='{{item.isTitle}}'>
+                    {{item.name}}
+                </view>
+                <view class='tabbar-item {{activeIndex === index ? "active" : ""}}'
+                    data-name='{{item.value}}'
+                    data-index='{{index}}'
+                    a:else
+                    onTap='changeItem'>
+                    {{item.name}}
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

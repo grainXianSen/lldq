@@ -1,0 +1,47 @@
+<!-- index.axml -->
+<import src='/template/footer/footer.axml'/>
+
+<scroll-view class='warp-container' scroll-y="{{true}}">
+    <!-- 头部 -->
+    <view class='header'>
+        <swiper></swiper>
+    </view>
+
+    <!-- 内容 -->
+    <view class='main'>
+        <!-- 内容的head -->
+        <view class='main-head'>
+            <view class='title'>{{mainTitle}}</view>
+            <view class='desc'>{{mainDesc}}</view>
+        </view>
+
+        <!-- 内容的body -->
+        <view class='main-body'>
+            <view class='figure' a:for='{{figureList}}' a:key='{{index}}'>
+                <view class='figure-image'>
+                    <image class='image' src='{{item.url}}' lazy-load></image>
+                    <text class='method'>{{item.method}}</text>
+                </view>
+                <view class='figure-desc clearfix'>
+                    <view class='desc'>
+                        <text class='strong'>{{item.strong}}</text>
+                        <text class='ordinary'>{{item.ordinary}}</text>
+                    </view>
+                    <text class='money'>
+                        <text class='mark'>{{item.mark}}</text>
+                        <text class='price'>{{item.price}}</text>
+                        <text>起</text>
+                    </text>
+                    <text class='evaluation'>
+                        <text>满意度</text>
+                        <text class='value'>{{item.evaValue}}</text>
+                        <text class='unit'>{{item.evaUnit}}</text>
+                    </text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 尾部 -->
+    <template is='grainFooter' />
+</scroll-view>

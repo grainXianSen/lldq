@@ -1,0 +1,27 @@
+/* components/tabbar/tabbar.acss */
+.grain-tabbar {
+    width: 100%;
+    font-size: 28rpx;
+    color: #333;
+    margin-bottom: 10rpx;
+}
+
+.tabbar-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabbar-body .tabbar-title {
+    padding-right: 8rpx;
+    font-size: 30rpx;
+}
+
+.tabbar-body .tabbar-item {
+    padding: 0 8rpx;
+    margin: 0 4rpx 20rpx;
+    border-radius: 6rpx;
+}
+.tabbar-body .tabbar-item.active {
+    color: #fff;
+    background: #09bb07;
+}

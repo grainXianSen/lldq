@@ -1,0 +1,7 @@
+<!--components/panel/panel.axml-->
+<view class='panel'>
+    <view class='panel-head'>{{panelHead}}</view>
+    <view class='panel-body'>
+        <slot name='panelBody'></slot>
+    </view>
+</view>

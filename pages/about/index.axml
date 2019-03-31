@@ -1,0 +1,44 @@
+<!--about.axml-->
+<import src='/template/footer/footer.axml'/>
+
+<scroll-view class='warp-container' scroll-y="{{true}}">
+    <!-- 头部 -->
+    <view class='header'>
+        <banner banner-image='{{bannerImage}}'
+            banner-head='{{bannerHead}}'
+            banner-desc='{{bannerDesc}}'>
+        </banner>
+    </view>
+
+    <!-- 内容 -->
+    <view class='main about'>
+        <!-- 关于我们 -->
+        <panel panel-head='{{aboutHead}}'>
+            <view class='about-body' slot='panelBody'>
+                <view>grain足迹旅游网创立于2006年10月，以“让旅游更简单”为使命，
+                为消费者提供由北京、上海、广州、深圳等64个城市出发的旅游产品预订服务，
+                产品全面，价格透明，全年365天24小时400电话预订，并提供丰富的后续服务和保障。</view>
+                <view>目前，grain足迹旅游网提供8万余种旅游产品供消费者选择，
+                涵盖跟团、自助、自驾、邮轮、酒店、签证、景区门票以及公司旅游等，
+                已成功服务累计超过400万人次出游。</view>
+                <view>同时基于grain足迹旅游网全球中文景点目录以及中文旅游社区，
+                可以更好地帮助游客了解目的地信息，妥善制定好出游计划，
+                并方便地预订旅程中的服务项目。</view>
+            </view>
+        </panel>
+
+        <!-- 联系我们 -->
+        <panel panel-head='{{connectHead}}'>
+            <view class='connect-body' slot='panelBody'>
+                <view>grain足迹股份有限公司</view>
+                <view>地址：北京海淀区</view>
+                <view>邮编：100089</view>
+                <view>电话：010-45615453</view>
+                <view>传真：010-45564564</view>
+            </view>
+        </panel>
+    </view>
+
+    <!-- 尾部 -->
+    <template is='grainFooter' />
+</scroll-view>

@@ -1,0 +1,67 @@
+<!-- tickey.axml -->
+<import src='/template/footer/footer.axml'/>
+
+<scroll-view class='warp-container' scroll-y="{{true}}">
+    <!-- 头部 -->
+    <view class='header'>
+        <banner banner-image='{{bannerImage}}'
+            banner-head='{{bannerHead}}'
+            banner-desc='{{bannerDesc}}'>
+        </banner>
+    </view>
+
+    <!-- 内容 -->
+    <view class='main'>
+        <!-- 票务预定 -->
+        <panel class='reservation' panel-head='{{resHead}}'>
+            <view class='res-body' slot='panelBody'>
+                <!-- 切换条 -->
+                <grain-tabbar active-index='{{activeType}}'
+                    tabbar-list='{{ticketTypeList}}'
+                    onSelecttabbar='getSelectTabbar'>
+                </grain-tabbar>
+
+                <!-- 表单 -->
+                <form class='ticket-form' slot='panelBody'>
+                    <view class='form-item start-city'>
+                        <label class='form-label' for='startCity'>出发地：</label>
+                        <text>北京</text>
+                    </view>
+                    <view class='form-item dest-city'>
+                        <label class='form-label' for='destCity'>目的地：</label>
+                        <text>上海</text>
+                    </view>
+                    <view class='form-item start-date'>
+                        <label class='form-label' for='startDate'>出发日：</label>
+                        <text>2019-03-31</text>
+                    </view>
+                    <view class='form-item dest-date' a:if="{{isShowDest}}">
+                        <label class='form-label' for='destDate'>返程日：</label>
+						<text>2019-04-01</text>
+                    </view>
+                    <view class='book-ticket'>
+                        <view class='button'>订票</view>
+                    </view>
+                </form>
+            </view>
+        </panel>
+
+        <!-- 最新票务 -->
+        <panel class='latest' panel-head='{{latestHead}}'>
+            <view class='latest-body' slot='panelBody'>
+                <!-- 切换条 -->
+                <grain-tabbar active-index='{{activeIndex}}' tabbar-list='{{tabbarList}}'></grain-tabbar>
+
+                <!-- 表格 -->
+                <table class='latest-table' t-class='{{latestTableClass}}'
+                    t-head='{{latestTableHead}}'
+                    t-body='{{latestTableBody}}'
+                    col-width='{{latestColWidth}}'>
+                </table>
+            </view>
+        </panel>
+    </view>
+
+    <!-- 尾部 -->
+    <template is='grainFooter' />
+</scroll-view>

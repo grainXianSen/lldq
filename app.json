@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/info/index",
+        "pages/ticket/index",
+        "pages/scenery/index",
+        "pages/about/index"
+    ],
+    "window": {
+        "defaultTitle": "流浪地球",
+        "titleBarColor": "#0960bd"
+    },
+    "tabBar": {
+        "selectedColor": "#409EFF",
+        "items": [
+          {
+              "pagePath": "pages/index/index",
+              "name": "首页",
+              "icon": "static/images/tabBar/home.png",
+              "activeIcon": "static/images/tabBar/select_home.png"
+          },
+          {
+              "pagePath": "pages/info/index",
+              "name": "资讯",
+              "icon": "static/images/tabBar/info.png",
+              "activeIcon": "static/images/tabBar/select_info.png"
+          },
+          {
+              "pagePath": "pages/ticket/index",
+              "name": "票务",
+              "icon": "static/images/tabBar/ticket.png",
+              "activeIcon": "static/images/tabBar/select_ticket.png"
+          },
+          {
+              "pagePath": "pages/scenery/index",
+              "name": "风景",
+              "icon": "static/images/tabBar/scenery.png",
+              "activeIcon": "static/images/tabBar/select_scenery.png"
+          },
+          {
+              "pagePath": "pages/about/index",
+              "name": "我们",
+              "icon": "static/images/tabBar/about.png",
+              "activeIcon": "static/images/tabBar/select_about.png"
+          }
+        ]
+    }
+}

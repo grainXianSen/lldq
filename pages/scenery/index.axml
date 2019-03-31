@@ -1,0 +1,32 @@
+<!-- scenery.axml -->
+<import src='/template/footer/footer.axml'/>
+
+<scroll-view class='warp-container' scroll-y="{{true}}">
+    <!-- 头部 -->
+    <view class='header'>
+        <banner banner-image='{{bannerImage}}'
+            banner-head='{{bannerHead}}'
+            banner-desc='{{bannerDesc}}'>
+        </banner>
+    </view>
+
+    <!-- 内容 -->
+    <view class='main'>
+        <panel panel-head='{{panelHead}}'>
+            <view class='scenery-body' slot='panelBody'>
+                <block a:for='{{sceneryList}}' a:key='{{index}}'>
+                    <view class='scenery-item'>
+                        <image class='image' src='{{item.url}}'></image>
+                        <view class='desc'>
+                            <text class='name'>{{item.name}}</text>
+                            <text class='count'>[共{{item.count}}张]</text>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </panel>
+    </view>
+
+    <!-- 尾部 -->
+    <template is='grainFooter' />
+</scroll-view>

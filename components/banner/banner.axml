@@ -1,0 +1,8 @@
+<!--components/banner/banner.axml-->
+<view class='banner'>
+    <image class='banner-image' src='{{bannerImage}}'></image>
+    <view class='banner-desc'>
+        <view class='head'>{{bannerHead}}</view>
+        <view class='desc'>{{bannerDesc}}</view>
+    </view>
+</view>
